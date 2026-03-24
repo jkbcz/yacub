@@ -9,4 +9,4 @@ How to run - `go run go-scanner/cmd/yacub/main.go`
 
 ### - Syntax Highlighter - scanner with highlighting capabilities, written in Rust
 
-How to run - `cargo run <filname>`
+How to run - `cargo run <input_filname> <output_filename>`
