@@ -23,6 +23,10 @@ impl Scanner {
         })
     }
 
+    pub fn source(&self) -> &str {
+        &self.source
+    }
+
     pub fn scan_all(&mut self) -> Result<Vec<Token>, String> {
         let mut tokens = Vec::new();
 
