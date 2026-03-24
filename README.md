@@ -1,3 +1,3 @@
 TODO: write readme..
 
-[go-scanner](yacub/README.md)
+[go-scanner](./go-scanner/README.md)
