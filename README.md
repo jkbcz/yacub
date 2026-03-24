@@ -1,35 +1,12 @@
-# YACUB
+## This repository contains two scanners (one with syntax highlighting):
 
-Yet Another Compiler with Undefined Behavior
+### - Original YACUB - scanner written in Go
 
-## Tokens
+How to run - `go run go-scanner/cmd/yacub/main.go`
 
-| Name          | Definition                                                    |
-| ------------- | ------------------------------------------------------------- |
-| LEFT_PAREN    | (                                                             |
-| RIGHT_PAREN   | )                                                             |
-| MINUS         | -                                                             |
-| PLUS          | +                                                             |
-| SLASH         | \                                                             |
-| STAR          | \*                                                            |
-| BANG          | !                                                             |
-| BANG_EQUAL    | !=                                                            |
-| EQUAL         | =                                                             |
-| EQUAL_EQUAL   | ==                                                            |
-| GREATER       | >                                                             |
-| GREATER_EQUAL | >=                                                            |
-| LESS          | <                                                             |
-| LESS_EQUAL    | <=                                                            |
-| IDENTIFIER    | Sequence of letters (Unicode) or digits, starts with a letter |
-| NUMBER        | Sequence of digits (0-9)                                      |
-| EOF           | End of file                                                   |
+[README for go-scanner (YACUB)](./go-scanner/README.md)
 
-## Running
 
-```bash
-go run cmd/yacub/main.go
-```
+### - Syntax Highlighter - scanner with highlighting capabilities, written in Rust
 
-Type in an expression into the STDIN and the program will display scanned tokens
-
-Example expression `a + 5 - 10 + 家`
+How to run - `cargo run <input_filname> <output_filename>`
